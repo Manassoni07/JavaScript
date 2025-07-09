@@ -1,0 +1,78 @@
+<!-- make grade evaluation website in which we enter marks and grade is alloted by alert  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grade Evaluator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+
+    button {
+      background-color: rgb(46, 46, 134);
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grade Evaluator</h1>
+  <input type="number" id="marksInput" placeholder="Enter your marks" />
+  <button onclick="evaluateGrade()">Check Grade</button>
+
+  <script>
+    // this is function it called when click check grade
+    function evaluateGrade() {
+      // main logic
+      const marks = parseFloat(document.getElementById("marksInput").value); // this is dom manupliaton 
+
+      if (isNaN(marks) || marks < 0 || marks > 100) {
+        alert("Please enter valid marks between 0 and 100.");
+        return;
+      }
+
+      let grade;
+      if (marks >= 90) {
+        grade = "A+";
+      } else if (marks >= 80) {
+        grade = "A";
+      } else if (marks >= 70) {
+        grade = "B";
+      } else if (marks >= 60) {
+        grade = "C";
+      } else if (marks >= 50) {
+        grade = "D";
+      } else {
+        grade = "F";
+      }
+
+      alert(`You scored ${marks}. Your grade is: ${grade}`);
+    }
+  </script>
+</body>
+</html>
