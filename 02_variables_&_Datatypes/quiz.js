@@ -16,3 +16,10 @@ console.log(a); // observation is if we add number in string so updated one is a
 
 console.log('Solution of second question');
 console.log("type of a is :",typeof(a));
+
+console.log('Solution of third question');
+
+const dict = {
+    hello : "namaste", book : "kitab", bag : "basta"
+}
+console.log(dict);
