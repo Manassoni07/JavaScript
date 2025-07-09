@@ -23,3 +23,5 @@ const dict = {
     hello : "namaste", book : "kitab", bag : "basta"
 }
 console.log(dict);
+console.log(dict.hello);
+console.log(dict.book);
