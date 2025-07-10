@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Original Text</h1>
+    <button id="changeBtn">Change Text</button>
+
+    <script>
+        document.getElementById("changeBtn").addEventListener("click", () => {
+            
+            document.getElementById("title").innerText = "Text Changed!";
+
+        });
+    </script>
+
+</body>
+
+</html>
