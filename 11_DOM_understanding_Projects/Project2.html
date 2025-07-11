@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+            *{
+                
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                font-size: xx-large;
+                font-weight: bolder;
+                padding: 20px;
+            }
+            body{
+                background-color: dodgerblue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .container{
+                height: 400px;
+                width: 300px;
+                background-color: white;
+                margin-top: 105px;
+                border-radius: 10px;
+                position: relative;
+            }
+            .container img{
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                object-fit: cover;
+                border-radius: 10px;
+
+            }
+            .container i{
+                color: #000000;
+                font-size: 55px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%) scale(0); /* we increase scale by javascript */
+                /* opacity: 0.8; */
+                transition: transform ease-in 0.4s;
+                
+            }
+    </style>
+</head>
+<body>
+        <h1>Double To See ! </h1>
+        <div class="container">
+            <img src="https://mrwallpaper.com/images/thumbnail/muscular-goku-ultra-instinct-q1wzj61fda48oh3g.webp" alt="">
+            <i class="ri-heart-fill"></i>
+        </div>
+        <script src="Project2.js"></script>
+</body>
+</html>
