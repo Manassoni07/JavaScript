@@ -1,0 +1,9 @@
+event bubbling 
+
+when we clicked of child so way the way we also clicked its parent and body and html also and this property is known as event bubbling in javascript 
+
+explained in A.html file 
+
+so avoid this we use .popogetion method 
+
+explained in B.html file

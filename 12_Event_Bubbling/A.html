@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling</title>
+    <style>
+        .child{
+            background-color: lightpink;
+            padding: 40px;
+            margin: 40px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="ele">
+            <div class="child">
+                <h1>HEY ! I am Child </h1>
+            </div>
+        </span>
+    </div>
+    <script>
+           document.querySelector(".child").addEventListener("click",()=>{
+            alert("Child was clicked");
+           })
+           document.querySelector(".ele").addEventListener("click",()=>{
+            alert("ele was clicked");
+           })
+           document.querySelector(".container").addEventListener("click",()=>{
+            alert("Container was clicked");
+           })
+
+           // this will show all elements 
+    </script>
+</body>
+</html>
