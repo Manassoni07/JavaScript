@@ -11,6 +11,13 @@ This repository contains concise JavaScript code examples and notes designed for
 -  DOM Manipulation
 -  Practice Problems with Logic
 -  Mini Projects For Better Understanding
+-  Events and Event Bubbling
+-  CallBack and Promises
+-  Async and Await
+-  Error handling 
+-  Object oriented programming 
+-  Advance JavaScript
+-  Projects
 
 Each file demonstrates a specific concept through simple code snippets and use-case driven examples.
 
